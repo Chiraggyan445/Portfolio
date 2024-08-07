@@ -1,0 +1,141 @@
+.education-more{
+    border: 2px solid rgb(203, 197, 197);
+    width: 800px;
+    margin-left: 400px;
+    margin-top: 70px;
+    padding-bottom: 50px;
+    height: 700px;
+    box-shadow: 10px 12px 15px 20px rgba(0,0,0,0.2);
+    background-color: white;
+    opacity: 0;
+    animation: slideLeft 1.3s ease-in forwards;
+}
+
+.education-more .heading h1{
+    margin-top: 100px;
+    background-color:white;
+    margin-top: 30px;
+    font-weight: bold;
+    font-style: italic;
+    letter-spacing: .1em;
+    opacity: 0;
+    animation: slideRight 1s ease forwards;
+}
+
+.education-more .heading h1:hover{
+    letter-spacing: .3em;
+    transition: 1s ease-out;
+}
+
+.education-more .content{
+    margin-top: -20px;
+}
+
+.education-more .content ul{
+    background-color: #fff;
+    margin-top: 60px;
+}
+
+
+.education-more .content .first-li{
+    font-size: 25px;
+}
+
+
+.education-more .content .second-li{
+    margin-top: 30px;
+    font-size: 25px;
+}
+
+
+
+.education-more .content .third-li{
+    margin-top: 30px;
+    font-size: 25px;
+}
+
+
+
+.education-more .content .fourth-li{
+    margin-top: 30px;
+    font-size: 25px;
+}
+
+.education-more .content .fifth-li{
+    margin-top: 30px;
+    font-size: 25px;
+}
+
+.education-more .content .sixth-li{
+    margin-top: 30px;
+    font-size: 25px;
+}
+
+
+.education-more .content li{
+    background-color: #fff;
+    text-align: left;
+}
+
+.education-more button{
+    width: 20%;
+    height: 50px;
+    background-color: red;
+    border: 2px solid red;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.education-more button:hover{
+    color: red;
+    background-color: #fff;
+    border: 2px solid red;
+}
+
+.education-more .footer{
+    background-color: #fff;
+}
+
+@keyframes slideRight {
+    0%{
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideLeft {
+    0%{
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideTop {
+    0%{
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideBottom {
+    0%{
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}

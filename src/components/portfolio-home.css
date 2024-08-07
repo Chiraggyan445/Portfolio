@@ -1,0 +1,380 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+header{
+    margin-right: 1200px;
+    padding: 25px;
+    font-weight: bold;
+}
+
+header h2{
+    opacity: 0;
+    animation: slideRight 1s ease forwards;
+    font-weight: bold;
+}
+
+@keyframes slideRight {
+    0%{
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+header .links{
+    margin-left: 850px;
+    margin-top: -35px;
+    font-size: 20px;
+    opacity: 0;
+    animation: slideTop 1s ease forwards;
+}
+
+@keyframes slideTop {
+    0%{
+        transform: translateY(100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.links .home{
+    color: white;
+    margin-right: 50px;
+    text-decoration: none;
+    animation-delay: 0.2s;
+}
+
+.links .home:active{
+    color: black;
+    background-color: white;
+    padding: 15px;
+    border-radius: 20px;
+}   
+
+.links .about{
+    color: white;
+    margin-right: 50px;
+    text-decoration: none;
+}
+
+.links .education{
+    color: white;
+    margin-right: 50px;
+    text-decoration: none;
+}
+
+.links .projects{
+    color: white;
+    margin-right: 50px;
+    text-decoration: none;
+}
+
+.links .skills{
+    color: white;
+    margin-right: 50px;
+    text-decoration: none;
+}
+
+.links .contact{
+    color: white;
+    margin-right: 50px;
+    text-decoration: none;
+}
+
+.links .about:hover{
+    color: black;
+    background-color: white;
+    padding: 15px;
+    border-radius: 20px;
+}
+
+.links .education:hover{
+    color: black;
+    background-color: white;
+    padding: 15px;
+    border-radius: 20px;
+}
+
+.links .skills:hover{
+    color: black;
+    background-color: white;
+    padding: 15px;
+    border-radius: 20px;   
+}
+
+.links .projects:hover{
+    color: black;
+    background-color: white;
+    padding: 15px;
+    border-radius: 20px;
+}
+
+.links .contact:hover{
+    color: black;
+    background-color: white;
+    padding: 15px;
+    border-radius: 20px;
+}
+
+.links .home:focus{
+    color: black;
+    background-color: white;
+    padding: 15px;
+    border-radius: 20px;
+}
+
+.description{
+    background-color: white;
+    height: 650px;
+    margin-top: -200px;
+}
+
+.description section{
+    margin-top: 230px;
+    margin-right: 800px;
+}
+
+@keyframes slideRight2 {
+    0%{
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideLeft {
+    0%{
+        transform: translateX(100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideBottom {
+    0%{
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes zoomIn {
+    0%{
+        transform: scale(0);
+        opacity: 0;
+    }
+    100%{
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes floatImage{
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-25px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+
+section h4{
+    font-weight: bold;
+    font-size: 40px;
+    text-align: center;
+    padding-top: 130px;
+    opacity: 0;
+    animation: slideRight2 1.5s ease forwards;
+    font-style: italic;
+    letter-spacing: .3em;
+}
+
+section h1{
+    font-weight: bold;
+    margin-top: 50px;
+    text-align: center;
+    margin-top: 135px;
+    opacity: 0;
+    animation: slideLeft 1.5s ease forwards;
+}
+
+section h1 span{
+    color: red;
+    opacity: 0;
+    animation: slideBottom 1s ease forwards;
+}
+
+section .more{
+    margin-top: 40px;
+    margin-right: 10px;
+    width: 200px;
+    height: 70px;
+    background-color: black;
+    color: white;
+    border: 2px solid white;
+    font-size: 20px;
+    font-weight: bold;
+    padding-top: 10px;
+    border-radius: 30px;
+    opacity: 0;
+    animation: slideBottom 1s ease forwards;
+}
+
+section .more:hover{
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+    font-weight: bold;
+}
+
+.chirag-image img{
+    width: 500px;
+    height: 500px;
+    margin-left: 1000px;
+    margin-top: -500px;
+    border: 2px solid rgb(246, 246, 246);
+    box-shadow: 20px 20px  20px rgb(246, 246, 246);
+    border-radius: 250px;
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+    animation: zoomIn 1.5s ease forwards, floatImage 3s ease-in-out infinite;
+}
+
+
+.welcome-bar{
+    color: black;
+    width: 70%;
+    border: 4px solid black;
+    margin-left: 130px;
+    margin-top: 30px;
+    display: flex;
+}
+
+.about2{
+    height: 850px;
+    width: 100%;
+    background-color: black;
+}
+
+.about2 .right-button{
+    margin-left: 1300px;
+    width: 50px;
+    height: 50px;
+    border-radius: 200px;
+    color: black;
+    background-color: white;
+    border: 2px solid white;
+}
+
+.about2 .left-button{
+    margin-right: 1400px;
+    width: 50px;
+    height: 50px;
+    margin-top: -50px;
+    border-radius: 200px;
+    color: black;
+    background-color: white;
+    border: 2px solid white;
+}
+
+.about2 .right-button:hover{
+    color: white;
+    background-color: black;
+    border: 2px solid white;
+}
+
+.about2 .left-button:hover{
+    color: white;
+    background-color: black;
+    border: 2px solid white;
+}
+
+.about2 .about2-heading{
+    padding-top: 50px;
+    font-size: 45px;
+    margin-left: 60px;
+    opacity: 0;
+    animation: slideRight 1.5s ease forwards;
+    font-style: italic;
+    letter-spacing: .3em;
+}
+
+.about2 .about2-bar{
+    color: white;
+    width: 25%;
+    border: 4px solid white;
+    margin-left: 625px;
+    margin-top: -40px;
+    display: flex;
+    opacity: 0;
+    animation: slideRight 1.5s ease forwards;
+}
+
+.about2 .about2-description{
+    width: 500px;
+    font-size: 20px;
+    text-align: center;
+    margin-left: 970px;
+    margin-top: -490px;
+    letter-spacing: 1px;
+    opacity: 0;
+    animation: slideLeft 1.5s ease forwards;
+}
+
+.about2 .about2-description strong{
+    font-size: 25px;
+    font-style: italic;
+}
+
+.about2 .about2-img{
+    height: 400px;
+    width: 350px;
+    border-radius: 300px;
+    margin-right: 950px;
+    margin-top: 80px;
+    opacity: 0;
+    animation: zoomIn 1.5s ease forwards, floatImage 3s ease infinite;
+}
+
+.about2 .contact-me{
+    color: white;
+    background-color: black;
+    border: 2px solid #fff;
+    margin-right: 950px;
+    margin-top: 60px;
+    width: 200px;
+    height: 50px;
+    font-weight: bold;
+    font-size: 22px;
+    opacity: 0;
+    animation: slideTop 1s ease forwards;
+}
+
+.about2 .contact-me:hover{
+    background-color: white;
+    color: black;
+    border: 2px solid white;
+}
+
